@@ -38,7 +38,6 @@
   width: 100%;
   border: 1px solid rgb(248, 245, 245) !important;
   margin-bottom: 10px;
-  object-fit: cover;
 }
 
 .product h6 {
@@ -46,8 +45,8 @@
   margin-bottom: 10px;
 }
 
-.product h5 {
-  font-size: 24px;
+.product span {
+  font-size: 15px;
   margin-bottom: 10px;
 }
 
@@ -102,7 +101,7 @@
   }
 
   .product-details {
-    top: -100px;
+    top: -50px;
   }
 }
 

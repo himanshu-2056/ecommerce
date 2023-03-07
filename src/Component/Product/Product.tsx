@@ -34,24 +34,27 @@ class Product extends Component<ProductProps> {
             Home Page Terms &amp; Conditions Dialog
           </h1>
           <div className=" product-container">
-            {_products.map((el, i) => {
+            {_products.map((elem, i) => {
               return (
                 <div className=" product" key={i}>
                   <div className="product-image-container">
-                    <img src={el.image} alt="" className="product-image" />
+                    <img
+                      src={elem.image}
+                      alt={elem.title}
+                      className="product-image"
+                    />
                   </div>
                   <div className="product-details">
                     <h6 className="product-title">
-                      {el.title.split(" ").slice(0, 3).join(" ")}
+                      {elem.title.split(" ").slice(0, 3).join(" ")}
                     </h6>
-                    <h5>Rs.{el.price}</h5>
-                    <div className="product-description">
-                      <p>{el.description.split(" ").slice(0, 7).join(" ")}</p>
-                    </div>
-
+                    <span>Rs.{elem.price}</span>
+                    <p className="product-description">
+                      {elem.description.split(" ").slice(0, 7).join(" ")}
+                    </p>
                     <button
                       className="add-to-cart-btn"
-                      onClick={() => this.props.AddCart(el)}
+                      onClick={() => this.props.AddCart(elem)}
                     >
                       Add to Cart
                     </button>
