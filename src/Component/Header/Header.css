@@ -13,10 +13,18 @@
 
 .logo {
   color: white;
-  background-color: rgb(36, 206, 224);
+  background-color: rgb(7, 158, 158);
   text-align: center;
-  padding: 15px 15px;
+  padding: 10px 15px;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-icon {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  object-fit: cover;
   cursor: pointer;
 }
 
@@ -28,10 +36,6 @@ body {
 
 .left-item {
   display: flex;
-}
-
-.basket {
-  margin-right: 15px;
 }
 
 .Header {
@@ -60,18 +64,14 @@ body {
   left: 80%;
   transform: translateX(-50%);
   padding: 10px;
-  background-color: rgb(244, 246, 247);
   z-index: 2;
-  width: 8vw;
-  height: 5vw;
 }
 
 .menu ul li {
   list-style-type: none;
   cursor: pointer;
-  display: flex;
   font-size: 20px;
-  margin: 10px 0px;
+  padding-right: 25px;
 }
 
 .icon {

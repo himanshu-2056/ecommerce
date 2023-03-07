@@ -30,7 +30,7 @@ function CartComponent({ items, IncreaseQuantity, DecreaseQuantity }: Inputs) {
           return (
             <div className="card" key={i}>
               <div className="image-container">
-                <img src={data.image} alt="" className="img-thumbnail" />
+                <img src={data.image} alt="image" />
               </div>
               <div className="content-container">
                 <h6>{data.title.split(" ").slice(0, 3).join(" ")}</h6>
@@ -60,7 +60,7 @@ function CartComponent({ items, IncreaseQuantity, DecreaseQuantity }: Inputs) {
           );
         })}
       </div>
-      <button className="btn-checkout">checkout</button>
+      <button className="btn-checkout">Checkout</button>
     </div>
   );
 }

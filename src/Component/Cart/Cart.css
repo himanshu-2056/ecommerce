@@ -1,11 +1,13 @@
 .card-container {
   max-width: 1280px;
-  margin: 0px auto;
+  margin: 50px auto;
   padding: 10px 10px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 500;
 }
 
 .grid-container {
@@ -31,6 +33,7 @@ h3 {
   max-height: 100%;
   max-width: 100%;
   object-fit: contain;
+  padding: 10px 0px;
 }
 
 .content-container {
@@ -39,6 +42,29 @@ h3 {
 }
 .content-container h6 {
   font-size: 20px;
+}
+
+.left-item {
+  display: flex;
+  gap: 40px;
+}
+
+.basket {
+  position: relative;
+}
+
+.numberCart {
+  position: absolute;
+  top: 0;
+  background-color: green;
+  border-radius: 50%;
+  color: white;
+  height: 22px;
+  width: 22px;
+  display: flex;
+  justify-content: center;
+  margin-left: 35px;
+  font-size: 14px;
 }
 
 .desc {
@@ -67,11 +93,12 @@ h3 {
 .btn-checkout {
   border: none;
   font-size: 15px;
-  background-color: cyan;
+  background-color: blue;
   margin: 10px 10px;
   padding: 10px 50px;
   float: right;
   cursor: pointer;
+  color: white;
 }
 
 .btn-checkout:hover {
